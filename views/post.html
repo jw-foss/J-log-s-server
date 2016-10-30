@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Poster</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.bootcss.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="../j.ico" type="image/x-icon">
+</head>
+
+<body>
+	<span><a href="/j_log/logout">Logout</a></span>
+	<h1 style="text-align:center">Jeremy Log's Poster</h1>
+	<div>
+		<form role="form" action="/j_log/post" method="POST" class="horizontal">
+			<div class="form-group">
+				<label for="title" class="col-sm-1 control-label">Title: </label>
+				<div class="col-sm-offset-1 col-sm-11">
+					<input class="form-control " type="text" name="title" placeholder="Input your title here" required/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="date" class="col-sm-1 control-label">Date: </label>
+				<div class="col-sm-offset-1 col-sm-11">
+					<input class="form-control " type="date" name="date" required/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="content" class="col-sm-1 control-label">Content: </label>
+				<div class="col-sm-offset-1 col-sm-11"><textarea class="form-control" rows="5" name="content" placeholder="Place your content here" required></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-1 col-sm-11" style="margin-top: 20px">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</div>
+
+		</form>
+	</div>
+</body>
+
+</html>

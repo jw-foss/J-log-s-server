@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./j.ico" type="image/x-icon">
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			font-family: consolas;
+		}
+		
+		#authen {
+			position: absolute;
+      width:50%;
+      margin: 0 auto;
+      top:50%;
+      left:50%;
+      -webkit-transform: translate(-25%,-50%);
+      -ms-transform: translate(-25%,-50%);
+      transform: translate(-25%,-50%);
+		}
+		#authen input {
+      display: inline-block;
+      height:20px;
+      border: #000 1px solid;
+     
+    }
+		#authen input:focus {
+			border: rgb(0, 172, 237) 1px solid;
+		}
+    #authen button {
+      display:inline-block;
+      height:25px;
+      width:60px;
+      border: none;
+      border-radius: 5px;
+      background: rgb(0, 172, 237);
+    }
+	</style>
+</head>
+
+<body>
+	<div id="authen">
+  <h1>You Need Login</h1>
+		<form action="/j_log" method="post">
+			<label for="username">Username: </label>
+			<input type="text" name="username" required placeholder="username" autofocus/>
+			<br/><br/>
+			<label for="password">Password: </label>
+			<input type="password" name="password" required placeholder="password" />
+      <br/><br/>
+      <button type="submit">Login</button>
+		</form>
+	</div>
+</body>
+
+</html>
