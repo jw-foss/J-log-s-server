@@ -1,4 +1,4 @@
-# J-log-s-server
+# J-log's-server
 Server side of J-log
 
 This is the server of J-log 
